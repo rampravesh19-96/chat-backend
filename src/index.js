@@ -25,6 +25,9 @@ app.use(
   })
 );
 
+app.get("/",(req,res)=>{
+  res.send("working fine!")
+})
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
